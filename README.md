@@ -1,24 +1,19 @@
-# Two Maridien 入住购物清单
+# Two Maridien 完整入住购物清单 V7
 
-这是一个纯静态、手机优先的购物清单网页，可直接部署到 GitHub Pages。
+纯静态、手机优先的 GitHub Pages 页面。
 
-## 文件
-- `index.html`：完整网页，无第三方依赖。
+## V7 更新
+- 采购计划方案置于页面最上方，并重新按两天执行路线规划。
+- 右上角悬浮目录，点击目录项平滑定位到对应章节。
+- 每个清单项目包含：产品类别、品牌、型号/产品、购买地点、对应图片、数量、参考价格、原因、用途、建议。
+- 英文产品/功能名称后附中文翻译或中文说明。
+- 实体地点可点击并调用 Google Maps 导航。
+- 商品可勾选，状态使用浏览器 Local Storage 自动保存。
+- `assets/` 内含本地离线示意图，部署不依赖外部图片服务器。
 
-## GitHub Pages 部署
-1. 新建一个 GitHub repository。
-2. 将本文件夹中的 `index.html` 和 `README.md` 上传到仓库根目录。
-3. 打开仓库 **Settings → Pages**。
-4. 在 **Build and deployment** 中选择 **Deploy from a branch**。
-5. Branch 选择 `main`，Folder 选择 `/ (root)`，保存。
-6. 等待 GitHub Pages 发布。
-
-## 手机功能
-- 页面为响应式设计。
-- 每件商品可以勾选，勾选状态保存在浏览器 Local Storage。
-- 所有实体购买地点都提供 Google Maps 搜索/导航链接。
-- 手机点击 Google Maps 链接时，如系统已安装 Google Maps，通常会由系统优先交给地图 App；否则会在浏览器打开 Google Maps。
-- 不在网页中显示具体房号。
+## 部署
+将 `index.html`、`README.md`、`assets/` 整体上传到 GitHub 仓库根目录。
+Settings → Pages → Deploy from a branch → main → /(root)。
 
 ## 注意
-价格、库存和门店营业时间会变化；购物前请再次确认。
+页面中的商品图片为本地类别示意图，用于帮助手机端快速识别类别，并非实时商品包装照片。价格和库存为参考，购买当天请以门店为准。

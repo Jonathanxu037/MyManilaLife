@@ -1,139 +1,417 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b6cff">
-<title>Two Maridien 入住购物清单</title>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b6cff">
+<title>Two Maridien 完整入住购物清单 V7</title>
 <style>
-:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#6d778b;--blue:#0b6cff;--line:#e7ebf2;--green:#0f9d68;--amber:#b77900;--red:#d93025}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
-.wrap{max-width:980px;margin:auto;padding:14px 14px 90px}.hero{background:linear-gradient(135deg,#0875ff,#4aa8ff);color:#fff;padding:22px;border-radius:22px;margin:8px 0 14px;box-shadow:0 12px 32px #0b6cff25}
-.hero h1{font-size:25px;line-height:1.2;margin:0 0 8px}.hero p{margin:5px 0;opacity:.94;font-size:14px}.pill{display:inline-block;background:#ffffff24;padding:5px 10px;border-radius:999px;margin:8px 5px 0 0;font-size:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 4px 16px #14213d0a}
-h2{font-size:20px;margin:4px 0 12px}h3{font-size:16px;margin:14px 0 7px}.muted{color:var(--muted);font-size:13px}.route{display:grid;gap:10px}
-.stop{border-left:4px solid var(--blue);padding:10px 12px;background:#f8fbff;border-radius:10px}.stop b{display:block}
-.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:var(--blue);color:#fff!important;border-radius:10px;padding:9px 12px;margin:7px 5px 0 0;font-weight:700;font-size:13px}
-.btn.secondary{background:#eef5ff;color:var(--blue)!important}.btn.green{background:var(--green)}
-.nav{position:sticky;top:0;z-index:9;background:#f5f7fbea;backdrop-filter:blur(12px);padding:8px 0;display:flex;gap:7px;overflow:auto;white-space:nowrap}
-.nav a{text-decoration:none;color:var(--text);background:#fff;border:1px solid var(--line);padding:7px 10px;border-radius:999px;font-size:12px}
-table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;background:#f7f9fc}th,td{padding:9px 7px;border-bottom:1px solid var(--line);vertical-align:top}
-.check{width:24px}.price{white-space:nowrap}.priority{font-weight:700}.must{color:var(--red)}.rec{color:var(--amber)}.later{color:var(--green)}
-input[type=checkbox]{width:20px;height:20px;accent-color:var(--blue)}.progress{height:10px;background:#e8edf5;border-radius:999px;overflow:hidden;margin-top:8px}.bar{height:100%;background:var(--blue);width:0}
-.total{font-size:22px;font-weight:800;color:var(--blue)}.note{background:#fff8e6;border:1px solid #ffe0a3;border-radius:12px;padding:10px;font-size:13px}
-footer{text-align:center;color:var(--muted);font-size:12px;margin-top:30px}
-@media(max-width:650px){.wrap{padding:10px 10px 80px}.hero{padding:18px}.hero h1{font-size:22px}.card{padding:13px;border-radius:15px}table{font-size:12px}th,td{padding:8px 4px}.hide-mobile{display:none}.btn{width:100%;margin:6px 0}.scroll{overflow-x:auto}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<section class="hero">
-<h1>Two Maridien｜完整入住购物清单 V6</h1>
-<p>起点：Two Maridien Tower, 26th St, BGC, Taguig</p>
-<p>适配手机查看 · 可勾选 · 自动保存 · 地点一键调用 Google Maps 导航</p>
-<span class="pill">40㎡ Studio</span><span class="pill">两天采购方案</span><span class="pill">预算约 ₱37,000–59,000</span>
-</section>
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#69758a;--blue:#0b6cff;--line:#e6ebf2;--red:#d93025;--amber:#a66a00;--green:#11885b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.55}
+.wrap{max-width:1500px;margin:auto;padding:12px 12px 80px}.hero{background:linear-gradient(135deg,#086bfa,#4faaff);color:white;padding:22px;border-radius:22px;margin:6px 0 12px;box-shadow:0 12px 35px #0b6cff25}
+.hero h1{font-size:26px;line-height:1.25;margin:0 0 8px}.hero p{font-size:14px;margin:5px 0;opacity:.95}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:#ffffff25;font-size:12px;margin:7px 5px 0 0}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;margin:12px 0;box-shadow:0 4px 18px #17203309}h2{font-size:20px;margin:3px 0 12px}h3{font-size:16px;margin:10px 0 5px}.muted{color:var(--muted);font-size:13px}
+.route{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.day{border:1px solid #dce9ff;border-radius:15px;padding:13px;background:#f8fbff}.stop{border-left:4px solid var(--blue);padding:9px 10px;margin:8px 0;background:white;border-radius:9px}.stop b{display:block}
+.btn{display:inline-block;text-decoration:none;background:var(--blue);color:white!important;padding:8px 11px;border-radius:10px;font-weight:700;font-size:12px;margin:6px 4px 0 0}.btn.green{background:var(--green)}.note{padding:11px;background:#fff8e7;border:1px solid #ffe0a1;border-radius:11px;font-size:13px;margin-top:10px}
+.tablewrap{overflow:auto;-webkit-overflow-scrolling:touch}table{border-collapse:collapse;width:100%;min-width:1350px;font-size:12px}th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}th{position:sticky;top:0;background:#f7f9fc;z-index:1;white-space:nowrap}.thumb{width:78px;height:48px;object-fit:cover;border-radius:9px;border:1px solid var(--line)}.check{width:28px}input[type=checkbox]{width:19px;height:19px;accent-color:var(--blue)}.price{white-space:nowrap}.must{color:var(--red);font-weight:700}.rec{color:var(--amber);font-weight:700}.later{color:var(--green);font-weight:700}.maplink{color:var(--blue);font-weight:700;text-decoration:none}.maplink span{display:block;font-size:10px;color:var(--muted)}.progress{height:10px;background:#e7ecf4;border-radius:999px;overflow:hidden}#bar{height:100%;background:var(--blue);width:0}
+#tocBtn{position:fixed;right:16px;top:16px;z-index:1001;border:0;border-radius:999px;background:#0b6cff;color:white;padding:11px 15px;font-weight:800;box-shadow:0 8px 25px #0b6cff45;cursor:pointer}#overlay{display:none;position:fixed;inset:0;background:#0006;z-index:999}#toc{position:fixed;right:-340px;top:0;height:100%;width:min(330px,88vw);background:white;z-index:1000;padding:70px 16px 20px;box-shadow:-12px 0 30px #0002;transition:.25s;overflow:auto}#toc.open{right:0}#overlay.open{display:block}#toc h2{position:absolute;top:17px;left:18px}#toc a{display:block;padding:11px;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}#toc a:hover{background:#f5f8ff}.budget{font-size:22px;color:var(--blue);font-weight:800}
+@media(max-width:760px){.wrap{padding:8px 8px 70px}.hero{padding:17px 15px;margin-top:7px}.hero h1{font-size:21px;padding-right:72px}.route{grid-template-columns:1fr}.card{padding:12px;border-radius:15px}h2{font-size:18px}#tocBtn{right:10px;top:10px;padding:9px 12px}table{min-width:1220px;font-size:11px}.thumb{width:66px;height:44px}}
+</style></head><body>
+<button id="tocBtn" onclick="openToc()">☰ 目录</button><div id="overlay" onclick="closeToc()"></div><aside id="toc"><h2>页面目录</h2><a href="#plan" onclick="closeToc()">采购计划方案</a><a href="#progress" onclick="closeToc()">采购进度</a><a href="#clean" onclick="closeToc()">01 全屋清洁</a><a href="#laundry" onclick="closeToc()">02 洗衣系统</a><a href="#tools" onclick="closeToc()">03 地面与浴室工具</a><a href="#bed" onclick="closeToc()">04 吸尘与床品</a><a href="#kitchen" onclick="closeToc()">05 厨房烹饪与餐饮</a><a href="#care" onclick="closeToc()">06 身体/面部/头发护理</a><a href="#oral" onclick="closeToc()">07 剃须/染发/口腔</a><a href="#storage" onclick="closeToc()">08 晾晒/收纳/日耗</a><a href="#emergency" onclick="closeToc()">09 工具/用电/应急/食品</a><a href="#budget" onclick="closeToc()">预算</a><a href="#safety" onclick="closeToc()">安全提醒</a></aside>
+<div class="wrap"><header class="hero"><h1>Two Maridien｜完整入住购物清单 V7</h1>
+<p>起点：Two Maridien Tower, 26th St, BGC, Taguig</p><p>手机优先 · 采购方案置顶 · 完整产品字段 · 对应图片 · 地点一键 Google Maps 导航 · 英文名称附中文说明</p>
+<span class="pill">40㎡ Studio</span><span class="pill">两天采购</span><span class="pill">可勾选自动保存</span></header>
 
-<nav class="nav">
-<a href="#plan">购买方案</a><a href="#clean">清洁</a><a href="#laundry">洗衣</a><a href="#tools">工具</a><a href="#bed">床品</a><a href="#kitchen">厨房</a><a href="#care">护理</a><a href="#oral">口腔</a><a href="#storage">收纳</a><a href="#emergency">应急</a>
-</nav>
-
-<section class="card" id="plan">
-<h2>🧭 购买方案｜先看这里</h2>
+<section class="card" id="plan"><h2>🧭 采购计划方案｜更新版</h2>
 <div class="route">
-<div class="stop"><b>DAY 1 · 第1站｜Watsons High Street Plaza</b><span class="muted">个人护理、口腔、染发、基础急救。买完先回家放货。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Watsons+High+Street+Plaza+26th+St+9th+Ave+BGC+Taguig" target="_blank">📍 Google Maps 导航</a></div>
-<div class="stop"><b>DAY 1 · 第2站｜SM Aura Premier</b><span class="muted">ACE Hardware → SM Appliance → Xiaomi。集中购买工具、晾晒、浴室用品、吹风机、热水壶、电磁炉。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=SM+Aura+Premier+Taguig" target="_blank">📍 导航到 SM Aura</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank">ACE</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura" target="_blank">SM Appliance</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura" target="_blank">Xiaomi</a></div>
-<div class="stop"><b>DAY 1 · 第3站｜回 Two Maridien 卸货</b><span class="muted">拖把、晾衣架、小家电体积较大，建议先送回家。</span><br><a class="btn green" href="https://www.google.com/maps/dir/?api=1&destination=Two+Maridien+Tower+26th+St+Taguig+Metro+Manila" target="_blank">🏠 导航回家</a></div>
-<div class="stop"><b>DAY 2 · 第1站｜DREAME BGC · Mitsukoshi</b><span class="muted">购买 Dreame S10。若当天太累，可单独安排。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=DREAME+BGC+Mitsukoshi+BGC" target="_blank">📍 Google Maps 导航</a></div>
-<div class="stop"><b>DAY 2 · 第2站｜Landers BGC</b><span class="muted">最大宗采购：清洁 → 洗衣 → 床品 → 厨房 → 日用品 → 最后食品。买完建议 Grab 直接回家。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Landers+Superstore+BGC+Taguig" target="_blank">📍 Google Maps 导航</a></div>
+<div class="day"><h3>DAY 1｜近距离 + SM Aura 集中采购</h3>
+<div class="stop"><b>① Watsons High Street Plaza</b><span class="muted">优先购买：Aveeno、CeraVe、OGX、Anessa、Gillette、L'Oréal染发、双氧水、Sonicare、牙膏、牙线、基础急救。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Watsons+High+Street+Plaza+26th+St+9th+Ave+BGC+Taguig" target="_blank">Google Maps 导航</a></div>
+<div class="stop"><b>② 回 Two Maridien 放个人护理用品</b><span class="muted">避免带着第一批商品继续逛。</span><br><a class="btn green" href="https://www.google.com/maps/dir/?api=1&destination=Two+Maridien+Tower+26th+St+Taguig" target="_blank">导航回家</a></div>
+<div class="stop"><b>③ SM Aura Premier｜ACE → SM Appliance → Xiaomi</b><span class="muted">ACE：拖把、浴室工具、晾衣架、工具、插线板；SM Appliance：吹风机、热水壶；Xiaomi：BHR8172PH电磁炉。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=SM+Aura+Premier+Taguig" target="_blank">导航到 SM Aura</a></div>
+<div class="stop"><b>④ 回家卸货</b><span class="muted">晾衣架、拖把、小家电体积较大，当天不再带去超市。</span></div></div>
+<div class="day"><h3>DAY 2｜设备 + 最大宗超市采购</h3>
+<div class="stop"><b>① DREAME BGC · Mitsukoshi</b><span class="muted">购买 Dreame S10；先确认现货。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=DREAME+BGC+Mitsukoshi+BGC" target="_blank">Google Maps 导航</a></div>
+<div class="stop"><b>② Landers BGC</b><span class="muted">按顺序：清洁 → 洗衣 → 床品 → 锅具餐具 → 日用品 → 调味料 → 冷藏冷冻食品最后买。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Landers+Superstore+BGC+Taguig" target="_blank">Google Maps 导航</a></div>
+<div class="stop"><b>③ Grab 直接回 Two Maridien</b><span class="muted">Landers属于最大宗采购，不建议步行搬运。</span><br><a class="btn green" href="https://www.google.com/maps/dir/?api=1&destination=Two+Maridien+Tower+26th+St+Taguig" target="_blank">导航回家</a></div>
+<div class="stop"><b>第二阶段暂缓</b><span class="muted">TP-Link Archer AX23、专用牛排锅、微波炉、电饭煲。先实际居住一周再决定。</span></div></div>
 </div>
-<div class="note" style="margin-top:12px">Landers 需要会员资格。官方帮助中心列出的个人会员年费为 ₱700；如尚未办理，请把会员费用计入预算。门店营业时间、库存和价格可能变化，出发前建议再次确认。</div>
-</section>
+<div class="note"><b>执行原则：</b>第一天解决“马上要用的小件和设备”，第二天解决“床品、清洁、厨房和食品大宗”。所有英文商品名在清单内保留原名，并在型号/产品字段补充中文名称或中文用途说明。</div></section>
 
-<section class="card">
-<h2>📊 采购进度</h2><div><span id="done">0</span> / <span id="count">0</span> 项已完成</div><div class="progress"><div class="bar" id="bar"></div></div>
-<button class="btn secondary" onclick="resetChecks()">重置全部勾选</button>
-</section>
-
-<div id="lists"></div>
-
-<section class="card">
-<h2>💰 总预算</h2>
-<table><tr><th>模块</th><th>预算</th></tr>
-<tr><td>清洁＋洗衣</td><td>₱4,000–6,500</td></tr><tr><td>床品＋晾晒＋收纳</td><td>₱5,000–8,000</td></tr>
-<tr><td>厨房锅具＋餐具</td><td>₱4,000–6,000</td></tr><tr><td>个人护理＋口腔＋染发</td><td>₱8,000–14,000</td></tr>
-<tr><td>ACE工具/浴室</td><td>₱3,500–6,000</td></tr><tr><td>Dreame S10</td><td>₱4,100–4,500</td></tr>
-<tr><td>Deerma DX700</td><td>₱1,700–2,700</td></tr><tr><td>Xiaomi电磁炉</td><td>约₱2,000</td></tr>
-<tr><td>吹风机＋热水壶</td><td>₱1,700–4,000</td></tr><tr><td>应急/电源</td><td>₱1,500–3,000</td></tr>
-<tr><td>首批食品</td><td>₱1,500–3,000</td></tr></table>
-<p class="total">建议准备：₱37,000–59,000</p>
-<p class="muted">TP-Link AX23、牛排专用锅、微波炉、电饭煲作为第二阶段，不计入当前必需采购。</p>
-</section>
-
-<section class="card">
-<h2>⚠️ 关键安全提醒</h2>
-<p>含氯消毒剂不要与酸性除垢剂、洁厕剂、醋、氨或下水道清洁剂混用。不同化学品分开使用，并充分冲洗、通风。</p>
-<p><b>2100W 电磁炉直接连接可靠接地的墙壁插座</b>，不要使用普通插线板或普通延长线。</p>
-<p>新床垫/旧床垫处理优先采用吸尘、干燥、全包床垫套；不要把含氯消毒剂或杀虫剂喷在睡眠接触面。</p>
-</section>
-<footer>Two Maridien 入住采购清单 · 静态网页 · 可直接部署 GitHub Pages</footer>
-</div>
-
+<section class="card" id="progress"><h2>📊 采购进度</h2><p><b id="done">0</b> / <b id="count">0</b> 项完成</p><div class="progress"><div id="bar"></div></div><button class="btn" onclick="resetChecks()">重置勾选</button></section>
+<section class="card product-section" id="clean"><h2>01｜全屋清洁</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p0"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="厨房重油污清洁剂"></td>
+<td><b>厨房重油污清洁剂</b></td><td>Mr Muscle</td><td>5-in-1 Total Kitchen 500ml</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱180–250</td>
+<td>针对厨房油脂，比普通多用途清洁剂更合适</td><td>灶台、台面、油烟机外表面</td><td class="must">必买；先小面积测试</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p1"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="研磨型清洁乳"></td>
+<td><b>研磨型清洁乳</b></td><td>CIF</td><td>Cream Cleaner 500ml</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱200–300</td>
+<td>补充处理普通喷剂难去除的顽固污渍</td><td>水槽、硬质台面</td><td class="rec">建议；避免用于易刮花表面</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p2"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="洗洁精"></td>
+<td><b>洗洁精</b></td><td>Palmolive</td><td>Oxy Power Degreaser</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱180–220</td>
+<td>日常餐具需要独立去油产品</td><td>餐具、锅具日常清洗</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p3"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="酸性水垢清洁剂"></td>
+<td><b>酸性水垢清洁剂</b></td><td>Domex</td><td>Stain &amp; Limescale Cleaner</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱150–220</td>
+<td>BGC硬质水垢/皂垢需要酸性除垢</td><td>浴室水垢、矿物沉积</td><td class="must">必买；绝不与含氯产品混用</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p4"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="除霉清洁剂"></td>
+<td><b>除霉清洁剂</b></td><td>Mr Muscle</td><td>Mold &amp; Mildew Cleaner 500ml</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱180–220</td>
+<td>潮湿浴室容易出现霉斑</td><td>瓷砖、缝隙等适用表面</td><td class="must">必买；通风使用</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p5"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="下水道清洁剂"></td>
+<td><b>下水道清洁剂</b></td><td>Mr Muscle</td><td>Sink &amp; Drain Declogger 500ml</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱150–200</td>
+<td>不想手动处理毛发/皂垢堵塞</td><td>厨房/浴室慢排水</td><td class="later">按需；不要与其他清洁剂混合</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p6"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="洗衣机清洁剂"></td>
+<td><b>洗衣机清洁剂</b></td><td>Dr. Beckmann</td><td>Service-it Deep Clean 250g</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>2</td><td class="price">₱500–600</td>
+<td>入住后先清洁前租客使用过的洗衣机</td><td>空桶深层清洁</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p7"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="玻璃清洁剂"></td>
+<td><b>玻璃清洁剂</b></td><td>Mr Muscle</td><td>Glass Cleaner</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱150–250</td>
+<td>镜面玻璃更容易无水痕处理</td><td>镜子、玻璃</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p8"></td>
+<td><img class="thumb" src="assets/cleaning.svg" alt="吸湿盒"></td>
+<td><b>吸湿盒</b></td><td>Landers / 同类</td><td>Charcoal Dehumidifier（木炭吸湿盒）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>4–6</td><td class="price">₱400–600</td>
+<td>衣柜和封闭空间防潮</td><td>衣柜、鞋柜、收纳区</td><td class="must">必买</td></tr></tbody></table></div></section><section class="card product-section" id="laundry"><h2>02｜洗衣系统</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p9"></td>
+<td><img class="thumb" src="assets/laundry.svg" alt="主洗衣液"></td>
+<td><b>主洗衣液</b></td><td>Ariel</td><td>Power Gel / Liquid + Downy</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1大瓶</td><td class="price">₱500–750</td>
+<td>兼顾强去污与日常衣物使用</td><td>普通衣物主洗</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p10"></td>
+<td><img class="thumb" src="assets/laundry.svg" alt="氧系去渍剂"></td>
+<td><b>氧系去渍剂</b></td><td>Vanish</td><td>Oxi Action Pink</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱250–500</td>
+<td>增强领口、食物、汗渍处理能力</td><td>洗前局部预处理/浸泡</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p11"></td>
+<td><img class="thumb" src="assets/laundry.svg" alt="衣物柔顺留香"></td>
+<td><b>衣物柔顺留香</b></td><td>Downy</td><td>Premium Parfum Mystique</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱250–500</td>
+<td>满足持久香味需求</td><td>最后漂洗柔顺留香</td><td class="rec">建议；皮肤敏感时减少用量</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p12"></td>
+<td><img class="thumb" src="assets/laundry.svg" alt="精细衣物洗剂"></td>
+<td><b>精细衣物洗剂</b></td><td>Woolite</td><td>Delicates / Gentle Cycle</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / 网购<span>导航</span></a></td><td>1</td><td class="price">₱500–700</td>
+<td>比强力洗衣液更适合贴身和弹力织物</td><td>内衣、精细面料</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p13"></td>
+<td><img class="thumb" src="assets/laundry.svg" alt="血渍局部处理"></td>
+<td><b>血渍局部处理</b></td><td>Generic / 通用</td><td>Hydrogen Peroxide 3%（3%双氧水）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1小瓶</td><td class="price">₱50–150</td>
+<td>新鲜血渍可局部辅助处理</td><td>白色/确认耐色织物</td><td class="rec">建议；深色衣物先测试</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p14"></td>
+<td><img class="thumb" src="assets/laundry.svg" alt="衣物卫生添加剂"></td>
+<td><b>衣物卫生添加剂</b></td><td>Lysol</td><td>Laundry Sanitizer（衣物除菌液）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / 网购<span>导航</span></a></td><td>1</td><td class="price">₱800–1,400</td>
+<td>需要额外卫生处理时使用</td><td>衣物洗涤卫生辅助</td><td class="rec">建议；严格按标签使用</td></tr></tbody></table></div></section><section class="card product-section" id="tools"><h2>03｜地面与浴室工具</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p15"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="平板拖把"></td>
+<td><b>平板拖把</b></td><td>ACE</td><td>Microfiber Flat Mop + Bucket（超细纤维平板拖把桶套装）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">约₱700</td>
+<td>40㎡Studio比大型旋转拖把更省空间</td><td>全屋湿拖</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p16"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="替换拖布"></td>
+<td><b>替换拖布</b></td><td>ACE</td><td>Microfiber Replacement Pad（超细纤维替换布）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>2</td><td class="price">约₱200</td>
+<td>厨房/浴室/生活区分开更卫生</td><td>拖把替换</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p17"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="浴室刷"></td>
+<td><b>浴室刷</b></td><td>ACE / 同类</td><td>Long-handle Bathroom Brush（长柄浴室刷）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱150–350</td>
+<td>减少弯腰刷地</td><td>浴室地面墙角</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p18"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="缝隙刷"></td>
+<td><b>缝隙刷</b></td><td>ACE / 同类</td><td>Grout Brush（瓷砖缝刷）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>2</td><td class="price">₱100–250</td>
+<td>普通大刷无法清理缝隙</td><td>瓷砖缝、边角</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p19"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="刮水器"></td>
+<td><b>刮水器</b></td><td>ACE / 同类</td><td>Squeegee（玻璃刮水器）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱100–250</td>
+<td>降低浴室积水与潮湿</td><td>淋浴玻璃、地面</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p20"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="湿度计"></td>
+<td><b>湿度计</b></td><td>Generic / 通用</td><td>Digital Hygrometer（数字温湿度计）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>2</td><td class="price">₱400–1,000</td>
+<td>监控卧室/浴室附近湿度</td><td>防潮判断</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p21"></td>
+<td><img class="thumb" src="assets/mop.svg" alt="马桶刷"></td>
+<td><b>马桶刷</b></td><td>ACE / 同类</td><td>Toilet Brush + Holder（马桶刷及底座）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱200–400</td>
+<td>基础卫生间工具</td><td>马桶清洁</td><td class="must">必买</td></tr></tbody></table></div></section><section class="card product-section" id="bed"><h2>04｜吸尘、床垫与睡眠</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p22"></td>
+<td><img class="thumb" src="assets/vacuum.svg" alt="床垫除螨吸尘器"></td>
+<td><b>床垫除螨吸尘器</b></td><td>Dreame</td><td>S10 Mite Removal Vacuum</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=DREAME+BGC+Mitsukoshi" target="_blank" rel="noopener">DREAME BGC · Mitsukoshi<span>导航</span></a></td><td>1</td><td class="price">₱4,100–4,500</td>
+<td>入住二手/既有床垫时优先机械除尘</td><td>床垫、沙发、软装</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p23"></td>
+<td><img class="thumb" src="assets/vacuum.svg" alt="地面吸尘器"></td>
+<td><b>地面吸尘器</b></td><td>Deerma</td><td>DX700 / DX700S</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura" target="_blank" rel="noopener">家电店 / 网购<span>导航</span></a></td><td>1</td><td class="price">₱1,700–2,700</td>
+<td>40㎡有线机无需考虑续航</td><td>硬地面、角落、日常灰尘</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p24"></td>
+<td><img class="thumb" src="assets/vacuum.svg" alt="床垫保护套"></td>
+<td><b>床垫保护套</b></td><td>Generic / 通用</td><td>Full-Zip Mattress Encasement（全包拉链床垫套）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / 网购<span>导航</span></a></td><td>1</td><td class="price">₱700–1,500</td>
+<td>清洁后隔离床垫表面</td><td>床垫全包保护</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p25"></td>
+<td><img class="thumb" src="assets/vacuum.svg" alt="枕头"></td>
+<td><b>枕头</b></td><td>Generic / 通用</td><td>Washable Pillow（可水洗枕头）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>2</td><td class="price">₱1,000–2,000</td>
+<td>避免继续使用未知卫生状况旧枕</td><td>睡眠</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p26"></td>
+<td><img class="thumb" src="assets/vacuum.svg" alt="床单枕套"></td>
+<td><b>床单枕套</b></td><td>Generic / 通用</td><td>Cotton/Bamboo Set（棉/竹纤维床品套装）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>2套</td><td class="price">₱1,600–3,000</td>
+<td>一套使用一套换洗</td><td>睡眠</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p27"></td>
+<td><img class="thumb" src="assets/vacuum.svg" alt="薄被"></td>
+<td><b>薄被</b></td><td>Generic / 通用</td><td>Air-con Quilt（空调薄被）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱1,000–2,000</td>
+<td>空调环境需要</td><td>睡眠保暖</td><td class="must">必买</td></tr></tbody></table></div></section><section class="card product-section" id="kitchen"><h2>05｜厨房烹饪与餐饮</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p28"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="电磁炉"></td>
+<td><b>电磁炉</b></td><td>Xiaomi 小米</td><td>Induction Cooker Lite BHR8172PH</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura" target="_blank" rel="noopener">Xiaomi Mi Store SM Aura<span>导航</span></a></td><td>1</td><td class="price">约₱1,999</td>
+<td>单人Studio无需大型灶具，2100W覆盖主要烹饪</td><td>火锅、煮面、煎蛋、煎肉、炒菜</td><td class="must">必买；只买菲律宾220–240V版本</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p29"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="主力煎炒锅"></td>
+<td><b>主力煎炒锅</b></td><td>Generic / 通用</td><td>26cm Deep Non-stick Pan + Lid（26cm深型不粘锅带盖）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / SM<span>导航</span></a></td><td>1</td><td class="price">₱800–1,500</td>
+<td>一口锅覆盖多数单人烹饪</td><td>鸡蛋、炒菜、煎肉</td><td class="must">必买；确认Induction Compatible（支持电磁炉）</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p30"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="汤锅/火锅"></td>
+<td><b>汤锅/火锅</b></td><td>Generic / 通用</td><td>24cm Stainless Pot + Lid（24cm不锈钢汤锅带盖）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / SM<span>导航</span></a></td><td>1</td><td class="price">₱700–1,500</td>
+<td>与煎炒锅形成两锅基础组合</td><td>火锅、面、鸡蛋、汤、饺子</td><td class="must">必买；确认支持电磁炉</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p31"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="厨具"></td>
+<td><b>厨具</b></td><td>Generic / 通用</td><td>Silicone Spatula + Tongs + Ladle（硅胶锅铲+食品夹+汤勺）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1套</td><td class="price">₱300–750</td>
+<td>保护不粘锅并覆盖基础烹饪</td><td>翻炒、夹取、盛汤</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p32"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="刀具"></td>
+<td><b>刀具</b></td><td>Generic / 通用</td><td>7–8in Chef Knife（7–8英寸主厨刀）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1</td><td class="price">₱500–1,200</td>
+<td>一把主刀足够单人厨房大部分任务</td><td>肉类、蔬菜、水果</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p33"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="砧板"></td>
+<td><b>砧板</b></td><td>Generic / 通用</td><td>Food Cutting Board（食品砧板）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>2</td><td class="price">₱300–700</td>
+<td>生肉与其他食材分开</td><td>备菜</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p34"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="餐具"></td>
+<td><b>餐具</b></td><td>Generic / 通用</td><td>2-person Dinnerware Set（双人基础餐具）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1套</td><td class="price">₱900–1,800</td>
+<td>现有烹饪系统需要完整吃饭工具</td><td>碗×2、盘×2、杯×2、筷/刀叉勺</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p35"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="食品保存"></td>
+<td><b>食品保存</b></td><td>Generic / 通用</td><td>Food Containers + Wrap + Foil + Zip Bags（保鲜盒+保鲜膜+铝箔+密封袋）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1套</td><td class="price">₱850–1,750</td>
+<td>减少食材浪费并方便冰箱收纳</td><td>备菜、剩菜、肉类分装</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p36"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="电热水壶"></td>
+<td><b>电热水壶</b></td><td>Philips / Xiaomi / 同级</td><td>1.5–1.7L Electric Kettle（电热水壶）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura" target="_blank" rel="noopener">SM Appliance Center Aura<span>导航</span></a></td><td>1</td><td class="price">₱700–1,500</td>
+<td>比每次使用电磁炉烧水更方便</td><td>热水、咖啡、茶</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p37"></td>
+<td><img class="thumb" src="assets/cooker.svg" alt="厨房垃圾桶"></td>
+<td><b>厨房垃圾桶</b></td><td>Generic / 通用</td><td>Lidded Pedal Bin（带盖脚踏垃圾桶）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / ACE<span>导航</span></a></td><td>1</td><td class="price">₱500–1,000</td>
+<td>控制食品垃圾气味</td><td>厨房垃圾</td><td class="must">必买</td></tr></tbody></table></div></section><section class="card product-section" id="care"><h2>06｜身体、面部、头发护理</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p38"></td>
+<td><img class="thumb" src="assets/care.svg" alt="沐浴露"></td>
+<td><b>沐浴露</b></td><td>Aveeno</td><td>Daily Moisturizing Body Wash（日常保湿沐浴露）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱400–700</td>
+<td>兼顾温和、保湿和轻微香味</td><td>日常沐浴</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p39"></td>
+<td><img class="thumb" src="assets/care.svg" alt="身体乳"></td>
+<td><b>身体乳</b></td><td>Aveeno</td><td>Daily Moisturizing Lotion（日常保湿身体乳）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱500–900</td>
+<td>降低洗澡后的干燥紧绷</td><td>身体保湿</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p40"></td>
+<td><img class="thumb" src="assets/care.svg" alt="洁面"></td>
+<td><b>洁面</b></td><td>CeraVe</td><td>Hydrating Facial Cleanser（保湿洁面）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱700–1,100</td>
+<td>偏干皮更适合温和洁面</td><td>早晚洁面</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p41"></td>
+<td><img class="thumb" src="assets/care.svg" alt="面部保湿"></td>
+<td><b>面部保湿</b></td><td>CeraVe</td><td>Moisturizing Lotion（保湿乳）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱700–1,200</td>
+<td>建立基础保湿屏障护理</td><td>面部保湿</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p42"></td>
+<td><img class="thumb" src="assets/care.svg" alt="防晒"></td>
+<td><b>防晒</b></td><td>Anessa 安热沙</td><td>Perfect UV Sunscreen Skincare Gel SPF50+</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱1,100–1,700</td>
+<td>菲律宾日照环境日常需要高倍防晒</td><td>面部/身体暴露部位</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p43"></td>
+<td><img class="thumb" src="assets/care.svg" alt="洗发水"></td>
+<td><b>洗发水</b></td><td>OGX</td><td>Extra Strength Hydrate &amp; Repair + Argan Oil</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱500–800</td>
+<td>针对干燥毛躁发质</td><td>清洁+保湿</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p44"></td>
+<td><img class="thumb" src="assets/care.svg" alt="护发素"></td>
+<td><b>护发素</b></td><td>OGX</td><td>Argan Oil Conditioner（摩洛哥坚果油护发素）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱500–850</td>
+<td>改善毛躁与梳理</td><td>每次洗发后</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p45"></td>
+<td><img class="thumb" src="assets/care.svg" alt="发膜"></td>
+<td><b>发膜</b></td><td>OGX</td><td>Argan Oil Hair Mask（摩洛哥坚果油发膜）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱600–800</td>
+<td>增加周期性深度护理</td><td>每周1–2次</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p46"></td>
+<td><img class="thumb" src="assets/care.svg" alt="吹风机"></td>
+<td><b>吹风机</b></td><td>Philips / Xiaomi / 同级</td><td>Ionic Temperature-Control Hair Dryer（负离子温控吹风机）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura" target="_blank" rel="noopener">SM Appliance Center Aura<span>导航</span></a></td><td>1</td><td class="price">₱1,000–2,500</td>
+<td>湿发自然干时间长，干燥发质更需要温控</td><td>快速低温吹干</td><td class="must">必买</td></tr></tbody></table></div></section><section class="card product-section" id="oral"><h2>07｜剃须、染发与口腔</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p47"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="剃须刀"></td>
+<td><b>剃须刀</b></td><td>Gillette 吉列</td><td>Mach3 Sensitive</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱400–800</td>
+<td>成熟稳定且替换刀头容易购买</td><td>日常剃须</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p48"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="剃须泡沫"></td>
+<td><b>剃须泡沫</b></td><td>Gillette 吉列</td><td>Sensitive Skin Shave Foam</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱150–250</td>
+<td>减少干刮刺激</td><td>剃须润滑</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p49"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="染发剂"></td>
+<td><b>染发剂</b></td><td>L&#x27;Oréal Paris 巴黎欧莱雅</td><td>Excellence Crème</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1–2</td><td class="price">约₱499/盒</td>
+<td>家庭染发配套完整</td><td>永久染发</td><td class="later">按需；先做过敏测试</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p50"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="电动牙刷"></td>
+<td><b>电动牙刷</b></td><td>Philips 飞利浦</td><td>Sonicare 3100</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons / Philips<span>导航</span></a></td><td>1</td><td class="price">₱2,500–4,000</td>
+<td>温和高效且有压力提示/计时</td><td>日常刷牙</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p51"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="日常牙膏"></td>
+<td><b>日常牙膏</b></td><td>Sensodyne 舒适达</td><td>Clinical White</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1–2</td><td class="price">₱400–600</td>
+<td>偏温和的日常美白选择</td><td>早间/日常刷牙</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p52"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="加强去渍牙膏"></td>
+<td><b>加强去渍牙膏</b></td><td>Colgate 高露洁</td><td>Optic White O2 / Pro Series</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱235–700</td>
+<td>加强茶、咖啡、烟渍等表面色渍管理</td><td>晚间或按耐受度使用</td><td class="must">必买；敏感时降低频率</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p53"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="牙线"></td>
+<td><b>牙线</b></td><td>Oral-B / 同类</td><td>Dental Floss（牙线）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱75–200</td>
+<td>牙刷无法充分清洁邻面</td><td>每日牙缝清洁</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p54"></td>
+<td><img class="thumb" src="assets/oral.svg" alt="漱口水"></td>
+<td><b>漱口水</b></td><td>Listerine / 同类</td><td>Alcohol-Free Mouthwash（无酒精漱口水）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱200–400</td>
+<td>作为口腔清洁辅助</td><td>漱口</td><td class="rec">建议</td></tr></tbody></table></div></section><section class="card product-section" id="storage"><h2>08｜晾晒、收纳与日耗</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p55"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="衣架"></td>
+<td><b>衣架</b></td><td>Generic / 通用</td><td>Slim Non-Slip Hangers（纤薄防滑衣架）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>30</td><td class="price">₱400–700</td>
+<td>Studio衣柜空间有限</td><td>日常衣物悬挂</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p56"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="宽肩衣架"></td>
+<td><b>宽肩衣架</b></td><td>Generic / 通用</td><td>Wide Shoulder Hangers（宽肩衣架）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>4–6</td><td class="price">₱200–500</td>
+<td>减少外套肩部变形</td><td>外套/西装</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p57"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="晾衣架"></td>
+<td><b>晾衣架</b></td><td>Generic / 通用</td><td>Foldable Drying Rack（折叠晾衣架）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱800–1,500</td>
+<td>不用时可收起，适合Studio</td><td>室内晾衣</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p58"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="内衣夹架"></td>
+<td><b>内衣夹架</b></td><td>Generic / 通用</td><td>Sock/Underwear Clip Hanger（袜子内衣夹架）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱150–350</td>
+<td>小件集中晾晒</td><td>袜子、内衣</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p59"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="脏衣篮"></td>
+<td><b>脏衣篮</b></td><td>Generic / 通用</td><td>Laundry Basket（脏衣篮）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / ACE<span>导航</span></a></td><td>2</td><td class="price">₱500–1,000</td>
+<td>普通衣物与贴身衣物分开</td><td>洗衣前分类</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p60"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="卫生纸"></td>
+<td><b>卫生纸</b></td><td>Generic / 通用</td><td>Toilet Paper（卫生纸）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1大包</td><td class="price">₱300–600</td>
+<td>日常刚需</td><td>卫生间</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p61"></td>
+<td><img class="thumb" src="assets/storage.svg" alt="洗手液"></td>
+<td><b>洗手液</b></td><td>Dove / Dettol / 同类</td><td>Gentle Hand Wash（温和洗手液）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC / Watsons<span>导航</span></a></td><td>2</td><td class="price">₱200–500</td>
+<td>厨房和卫生间各一瓶</td><td>洗手</td><td class="must">必买</td></tr></tbody></table></div></section><section class="card product-section" id="emergency"><h2>09｜工具、用电、应急与食品</h2>
+<div class="tablewrap"><table><thead><tr><th>✓</th><th>图片</th><th>产品类别</th><th>品牌</th><th>型号/产品</th><th>购买地点</th><th>数量</th><th>参考价格</th><th>原因</th><th>用途</th><th>建议</th></tr></thead><tbody><tr>
+<td class="check"><input type="checkbox" data-id="p62"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="活动扳手"></td>
+<td><b>活动扳手</b></td><td>Stanley / Total</td><td>6in Adjustable Wrench（6英寸活动扳手）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱250–500</td>
+<td>安装水龙头净水器及基础维护</td><td>拧紧接头</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p63"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="水龙头工具"></td>
+<td><b>水龙头工具</b></td><td>Generic / 通用</td><td>Aerator Key + PTFE Tape + Adapter Kit（起泡器钥匙+生料带+转接头）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1套</td><td class="price">₱230–880</td>
+<td>不同水龙头接口可能需要转接</td><td>净水器安装</td><td class="later">按需；先确认龙头接口</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p64"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="基础工具箱"></td>
+<td><b>基础工具箱</b></td><td>Generic / 通用</td><td>Home Tool Kit（家用工具箱）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱800–1,500</td>
+<td>日常小维修无需临时买工具</td><td>螺丝刀、钳子、卷尺等</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p65"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="插线板"></td>
+<td><b>插线板</b></td><td>Omni / Panther / 同级</td><td>Surge Protector（浪涌保护插线板）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>2</td><td class="price">₱700–1,500</td>
+<td>保护路由器、充电器等小功率设备</td><td>电子设备供电</td><td class="must">必买；禁止连接2100W电磁炉</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p66"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="应急灯"></td>
+<td><b>应急灯</b></td><td>Generic / 通用</td><td>Rechargeable LED Emergency Light（充电式LED应急灯）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank" rel="noopener">ACE Hardware SM Aura<span>导航</span></a></td><td>1</td><td class="price">₱300–800</td>
+<td>停电时照明</td><td>应急</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p67"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="移动电源"></td>
+<td><b>移动电源</b></td><td>Anker / Xiaomi</td><td>10,000–20,000mAh Power Bank（移动电源）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=SM+Aura+Premier+Taguig" target="_blank" rel="noopener">SM Aura / Xiaomi<span>导航</span></a></td><td>1</td><td class="price">₱1,000–2,000</td>
+<td>外出或停电保持手机供电</td><td>手机充电</td><td class="rec">建议</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p68"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="急救包"></td>
+<td><b>急救包</b></td><td>Generic / 通用</td><td>Basic First Aid Kit（基础急救包）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC" target="_blank" rel="noopener">Watsons High Street Plaza<span>导航</span></a></td><td>1</td><td class="price">₱500–1,000</td>
+<td>小擦伤等基础应急</td><td>创可贴、纱布等</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p69"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="首批食品"></td>
+<td><b>首批食品</b></td><td>Landers / 多品牌</td><td>Eggs, Milk, Meat, Vegetables, Noodles（鸡蛋、牛奶、肉、蔬菜、面等）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1批</td><td class="price">₱1,500–3,000</td>
+<td>入住后立即建立基础食物库存</td><td>日常饮食</td><td class="must">必买；冷冻冷藏最后购买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p70"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="基础调味料"></td>
+<td><b>基础调味料</b></td><td>多品牌</td><td>Oil, Salt, Soy Sauce, Pepper（油、盐、生抽、黑胡椒等）</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig" target="_blank" rel="noopener">Landers BGC<span>导航</span></a></td><td>1套</td><td class="price">₱800–1,500</td>
+<td>有锅具后仍需基础调味</td><td>日常烹饪</td><td class="must">必买</td></tr><tr>
+<td class="check"><input type="checkbox" data-id="p71"></td>
+<td><img class="thumb" src="assets/tools.svg" alt="Wi-Fi路由器"></td>
+<td><b>Wi-Fi路由器</b></td><td>TP-Link 普联</td><td>Archer AX23 AX1800 Wi-Fi 6</td>
+<td>后补 / 先检查现有网络</td><td>1</td><td class="price">₱2,000–3,000</td>
+<td>房间若已有良好路由器则无需重复购买</td><td>家庭网络</td><td class="later">暂缓购买</td></tr></tbody></table></div></section>
+<section class="card" id="budget"><h2>💰 预算计划</h2><p>清洁＋洗衣 ₱4,000–6,500；床品＋晾晒＋收纳 ₱5,000–8,000；厨房锅具＋餐具 ₱4,000–6,000；个人护理＋口腔＋染发 ₱8,000–14,000；工具/浴室 ₱3,500–6,000；Dreame S10 ₱4,100–4,500；Deerma DX700 ₱1,700–2,700；电磁炉约 ₱2,000；吹风机＋热水壶 ₱1,700–4,000；应急/电源 ₱1,500–3,000；首批食品 ₱1,500–3,000。</p><p class="budget">整体建议准备：约 ₱37,000–59,000</p><p class="muted">价格为采购预算参考，不代表门店实时售价；实际库存、促销与价格以购买当天为准。</p></section>
+<section class="card" id="safety"><h2>⚠️ 安全提醒</h2><p><b>清洁剂：</b>含氯产品绝不与酸性除垢剂、洁厕剂、醋、氨、下水道清洁剂混用。切换化学品前充分冲洗并通风。</p><p><b>电磁炉：</b>2100W设备直接连接可靠接地墙壁插座，不连接普通插线板。</p><p><b>床垫：</b>优先采用HEPA吸尘、干燥和全包床垫套，不把含氯消毒剂或杀虫剂喷在睡眠接触面。</p></section>
+<footer class="muted" style="text-align:center;padding:20px">Two Maridien 入住采购清单 V7 · GitHub Pages 静态网站</footer></div>
 <script>
-const groups = [
-["clean","🧹 1. 全屋清洁",[
-["Mr Muscle 5-in-1 Total Kitchen","1","₱180–250","Landers","必买"],["CIF Cream Cleaner 500ml","1","₱200–300","Landers","建议"],["Palmolive Oxy Power Degreaser","1","₱180–220","Landers","必买"],["Domex Stain & Limescale Cleaner","1","₱150–220","Landers","必买"],["Mr Muscle Mold & Mildew","1","₱180–220","Landers","必买"],["Mr Muscle Sink & Drain Declogger","1","₱150–200","Landers","必买"],["Dr. Beckmann Service-it Deep Clean","2","₱500–600","Landers","必买"],["Mr Muscle Glass Cleaner","1","₱150–250","Landers","建议"],["Charcoal Dehumidifier","4–6","₱400–600","Landers","必买"],["Microfiber Cloth","8–10","₱200–400","Landers","必买"],["3M Non-Scratch Sponge","1包","₱100–200","Landers/ACE","必买"],["Nitrile/Rubber Gloves","1盒","₱200–400","Landers","必买"],["KN95","1包","₱100–300","Landers","建议"],["Heavy Duty Garbage Bags","2卷","₱200–400","Landers","必买"],["Kitchen Paper Towels","1大包","₱250–500","Landers","必买"]]],
-["laundry","👕 2. 洗衣系统",[
-["Ariel Power Gel / Liquid + Downy","1大瓶","₱500–750","Landers","必买"],["Vanish Oxi Action Pink","1","₱250–500","Landers","必买"],["Downy Premium Parfum Mystique","1","₱250–500","Landers","建议"],["Woolite Delicates / Gentle Cycle","1","₱500–700","Landers/网购","必买"],["3% Hydrogen Peroxide","1","₱50–150","Watsons","建议"],["Lysol Laundry Sanitizer","1","₱800–1,400","Landers/网购","建议"]]],
-["tools","🧽 3. 地面与浴室工具",[
-["ACE Microfiber Flat Mop + Bucket","1","约₱700","ACE SM Aura","必买"],["Replacement Pads","2","约₱200","ACE SM Aura","必买"],["长柄浴室刷","1","₱150–350","ACE SM Aura","必买"],["Grout Brush","2","₱100–250","ACE SM Aura","建议"],["Squeegee","1","₱100–250","ACE SM Aura","建议"],["Drain Strainer","2–3","₱100–250","ACE SM Aura","必买"],["Digital Hygrometer","2","₱400–1,000","ACE SM Aura","建议"],["防滑浴室垫","1","₱200–500","ACE SM Aura","必买"],["马桶刷＋底座","1","₱200–400","ACE SM Aura","必买"],["卫生间带盖垃圾桶","1","₱200–500","ACE SM Aura","必买"]]],
-["bed","🛏️ 4. 吸尘与床品",[
-["Dreame S10 Mite Removal Vacuum","1","₱4,100–4,500","DREAME BGC","必买"],["Deerma DX700/DX700S","1","₱1,700–2,700","家电/网购","必买"],["Full-Zip Mattress Encasement","1","₱700–1,500","Landers/网购","必买"],["新枕头","2","₱1,000–2,000","Landers","必买"],["床单＋枕套","2套","₱1,600–3,000","Landers","必买"],["薄被/空调被","1","₱1,000–2,000","Landers","必买"],["被套","2","₱1,000–2,000","Landers","建议"]]],
-["kitchen","🍳 5. 厨房与餐饮",[
-["Xiaomi Induction Cooker Lite BHR8172PH","1","约₱2,000","Xiaomi SM Aura","必买"],["26cm深型不粘锅＋盖","1","₱800–1,500","Landers/SM","必买"],["24cm不锈钢汤锅＋盖","1","₱700–1,500","Landers/SM","必买"],["硅胶锅铲","1","₱100–250","Landers","必买"],["食品夹","1","₱100–250","Landers","建议"],["汤勺＋漏勺","各1","₱200–500","Landers","建议"],["隔热手套＋隔热垫","1套","₱250–600","Landers","必买"],["砧板","2","₱300–700","Landers","必买"],["7–8英寸主厨刀","1","₱500–1,200","Landers","必买"],["厨房剪刀＋开瓶/开罐器","各1","₱250–700","Landers","建议"],["饭碗","2","₱200–400","Landers","必买"],["餐盘","2","₱200–500","Landers","必买"],["杯子","2","₱200–500","Landers","必买"],["筷子＋刀叉勺","2套","₱400–900","Landers","必买"],["沥水篮/洗菜盆","1","₱200–400","Landers","建议"],["保鲜盒","4–6","₱500–1,000","Landers","建议"],["保鲜膜＋铝箔＋Zip Bags","各1","₱350–750","Landers","必买"],["厨房带盖脚踏垃圾桶","1","₱500–1,000","Landers/ACE","必买"],["1.5–1.7L 电热水壶","1","₱700–1,500","SM Appliance","必买"],["首批饮用水","1批","₱200–500","Landers","必买"]]],
-["care","🧴 6. 身体、面部、头发、剃须与染发",[
-["Aveeno Daily Moisturizing Body Wash","1","₱400–700","Watsons","必买"],["Aveeno Daily Moisturizing Lotion","1","₱500–900","Watsons","必买"],["CeraVe Hydrating Facial Cleanser","1","₱700–1,100","Watsons","必买"],["CeraVe Moisturizing Lotion","1","₱700–1,200","Watsons","必买"],["Anessa Perfect UV SPF50+","1","₱1,100–1,700","Watsons","必买"],["OGX Hydrate & Repair Shampoo","1","₱500–800","Watsons","必买"],["OGX Argan Oil Conditioner","1","₱500–850","Watsons","必买"],["OGX Argan Oil Hair Mask","1","₱600–800","Watsons","建议"],["Silicone Scalp Massager","1","₱100–250","Watsons","建议"],["负离子温控吹风机","1","₱1,000–2,500","SM Appliance","必买"],["Microfiber Hair Turban","2","₱200–500","Watsons","建议"],["浴巾","2","₱600–1,400","Landers","必买"],["Gillette Mach3 Sensitive","1","₱400–800","Watsons","必买"],["Mach3 Refill","1盒","₱500–800","Watsons","建议"],["Gillette Sensitive Shave Foam","1","₱150–250","Watsons","必买"],["L'Oréal Excellence Crème","1–2","约₱499/盒","Watsons","建议"],["染发碗刷＋分区夹＋Vaseline","1套","₱300–600","Watsons","建议"]]],
-["oral","🦷 7. 口腔护理",[
-["Philips Sonicare 3100","1","₱2,500–4,000","Watsons/Philips","必买"],["Sonicare软毛刷头","2–4","₱700–1,500","Watsons/Philips","建议"],["Sensodyne Clinical White","1–2","₱400–600","Watsons","必买"],["Colgate Optic White O2 / Pro","1","₱235–700","Watsons","必买"],["Dental Floss","1","₱75–200","Watsons","必买"],["Alcohol-Free Mouthwash","1","₱200–400","Watsons","建议"],["Tongue Scraper","1","₱100–200","Watsons","建议"]]],
-["storage","👚 8. 晾晒、收纳与日耗",[
-["Slim Non-Slip Hangers","30","₱400–700","Landers","必买"],["Wide Shoulder Hangers","4–6","₱200–500","ACE","建议"],["折叠晾衣架","1","₱800–1,500","ACE","必买"],["内衣袜子夹架","1","₱150–350","ACE","必买"],["脏衣篮","2","₱500–1,000","Landers/ACE","建议"],["带盖Storage Box","2–3","₱600–1,800","ACE","建议"],["Toilet Paper","1大包","₱300–600","Landers","必买"],["温和洗手液","2","₱200–500","Landers/Watsons","必买"],["Tissue / Wet Wipes","适量","₱200–500","Landers","建议"]]],
-["emergency","🧰 9. 工具、用电与应急",[
-["6英寸 Adjustable Wrench","1","₱250–500","ACE","必买"],["Faucet Aerator Key","1套","₱100–300","ACE","按需"],["PTFE Tape","1","₱30–80","ACE","按需"],["Faucet Adapter Kit","1","₱100–500","ACE","按需"],["基础工具箱","1","₱800–1,500","ACE","建议"],["Surge Protector","2","₱700–1,500","ACE","必买"],["LED应急灯","1","₱300–800","ACE","建议"],["Power Bank 10,000–20,000mAh","1","₱1,000–2,000","SM/Xiaomi","建议"],["备用USB-C线＋充电头","1套","₱500–1,500","SM/Xiaomi","建议"],["基础First Aid Kit","1","₱500–1,000","Watsons","必买"],["首批基础食品＋调味料","1批","₱2,300–4,500","Landers","必买"],["TP-Link Archer AX23","1","₱2,000–3,000","后补","暂缓"]]]
-];
-
-const placeLinks = {
-"Landers":"https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig",
-"Landers/ACE":"https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig",
-"Landers/网购":"https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig",
-"Watsons":"https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC",
-"ACE":"https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier",
-"ACE SM Aura":"https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier",
-"DREAME BGC":"https://www.google.com/maps/search/?api=1&query=DREAME+BGC+Mitsukoshi",
-"SM Appliance":"https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura",
-"Xiaomi SM Aura":"https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura",
-"SM/Xiaomi":"https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura"
-};
-let idx=0, out="";
-groups.forEach(g=>{
- out+=`<section class="card" id="${g[0]}"><h2>${g[1]}</h2><div class="scroll"><table><thead><tr><th class="check">✓</th><th>产品</th><th>数量</th><th>预算</th><th>购买地点</th><th>优先级</th></tr></thead><tbody>`;
- g[2].forEach(r=>{
-  const id="i"+idx++;
-  const link=placeLinks[r[3]];
-  const place=link?`<a href="${link}" target="_blank">${r[3]} 📍</a>`:r[3];
-  const pc=r[4]=="必买"?"must":r[4]=="建议"?"rec":"later";
-  out+=`<tr><td><input type="checkbox" id="${id}" data-id="${id}"></td><td>${r[0]}</td><td>${r[1]}</td><td class="price">${r[2]}</td><td>${place}</td><td class="priority ${pc}">${r[4]}</td></tr>`;
- });
- out+="</tbody></table></div></section>";
-});
-document.getElementById("lists").innerHTML=out;
-function update(){
- const c=[...document.querySelectorAll('input[type=checkbox]')], done=c.filter(x=>x.checked).length;
- document.getElementById("done").textContent=done;document.getElementById("count").textContent=c.length;
- document.getElementById("bar").style.width=(done/c.length*100)+"%";
- c.forEach(x=>localStorage.setItem(x.dataset.id,x.checked?"1":"0"));
-}
-document.querySelectorAll('input[type=checkbox]').forEach(x=>{x.checked=localStorage.getItem(x.dataset.id)==="1";x.addEventListener("change",update)});
-function resetChecks(){if(confirm("确定清除全部勾选记录？")){document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);localStorage.clear();update()}}
-update();
-</script>
-</body></html>
+function openToc(){document.getElementById('toc').classList.add('open');document.getElementById('overlay').classList.add('open')}
+function closeToc(){document.getElementById('toc').classList.remove('open');document.getElementById('overlay').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeToc()})
+function update(){const a=[...document.querySelectorAll('input[type=checkbox]')],d=a.filter(x=>x.checked).length;document.getElementById('done').textContent=d;document.getElementById('count').textContent=a.length;document.getElementById('bar').style.width=(a.length?d/a.length*100:0)+'%';a.forEach(x=>localStorage.setItem('shop_'+x.dataset.id,x.checked?'1':'0'))}
+document.querySelectorAll('input[type=checkbox]').forEach(x=>{x.checked=localStorage.getItem('shop_'+x.dataset.id)==='1';x.addEventListener('change',update)})
+function resetChecks(){if(confirm('确定清除全部购物勾选记录？')){document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);Object.keys(localStorage).filter(k=>k.startsWith('shop_')).forEach(k=>localStorage.removeItem(k));update()}}update();
+</script></body></html>

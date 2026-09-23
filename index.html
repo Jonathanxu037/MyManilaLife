@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b6cff">
+<title>Two Maridien 入住购物清单</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#6d778b;--blue:#0b6cff;--line:#e7ebf2;--green:#0f9d68;--amber:#b77900;--red:#d93025}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.wrap{max-width:980px;margin:auto;padding:14px 14px 90px}.hero{background:linear-gradient(135deg,#0875ff,#4aa8ff);color:#fff;padding:22px;border-radius:22px;margin:8px 0 14px;box-shadow:0 12px 32px #0b6cff25}
+.hero h1{font-size:25px;line-height:1.2;margin:0 0 8px}.hero p{margin:5px 0;opacity:.94;font-size:14px}.pill{display:inline-block;background:#ffffff24;padding:5px 10px;border-radius:999px;margin:8px 5px 0 0;font-size:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 4px 16px #14213d0a}
+h2{font-size:20px;margin:4px 0 12px}h3{font-size:16px;margin:14px 0 7px}.muted{color:var(--muted);font-size:13px}.route{display:grid;gap:10px}
+.stop{border-left:4px solid var(--blue);padding:10px 12px;background:#f8fbff;border-radius:10px}.stop b{display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:var(--blue);color:#fff!important;border-radius:10px;padding:9px 12px;margin:7px 5px 0 0;font-weight:700;font-size:13px}
+.btn.secondary{background:#eef5ff;color:var(--blue)!important}.btn.green{background:var(--green)}
+.nav{position:sticky;top:0;z-index:9;background:#f5f7fbea;backdrop-filter:blur(12px);padding:8px 0;display:flex;gap:7px;overflow:auto;white-space:nowrap}
+.nav a{text-decoration:none;color:var(--text);background:#fff;border:1px solid var(--line);padding:7px 10px;border-radius:999px;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;background:#f7f9fc}th,td{padding:9px 7px;border-bottom:1px solid var(--line);vertical-align:top}
+.check{width:24px}.price{white-space:nowrap}.priority{font-weight:700}.must{color:var(--red)}.rec{color:var(--amber)}.later{color:var(--green)}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--blue)}.progress{height:10px;background:#e8edf5;border-radius:999px;overflow:hidden;margin-top:8px}.bar{height:100%;background:var(--blue);width:0}
+.total{font-size:22px;font-weight:800;color:var(--blue)}.note{background:#fff8e6;border:1px solid #ffe0a3;border-radius:12px;padding:10px;font-size:13px}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:30px}
+@media(max-width:650px){.wrap{padding:10px 10px 80px}.hero{padding:18px}.hero h1{font-size:22px}.card{padding:13px;border-radius:15px}table{font-size:12px}th,td{padding:8px 4px}.hide-mobile{display:none}.btn{width:100%;margin:6px 0}.scroll{overflow-x:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+<h1>Two Maridien｜完整入住购物清单 V6</h1>
+<p>起点：Two Maridien Tower, 26th St, BGC, Taguig</p>
+<p>适配手机查看 · 可勾选 · 自动保存 · 地点一键调用 Google Maps 导航</p>
+<span class="pill">40㎡ Studio</span><span class="pill">两天采购方案</span><span class="pill">预算约 ₱37,000–59,000</span>
+</section>
+
+<nav class="nav">
+<a href="#plan">购买方案</a><a href="#clean">清洁</a><a href="#laundry">洗衣</a><a href="#tools">工具</a><a href="#bed">床品</a><a href="#kitchen">厨房</a><a href="#care">护理</a><a href="#oral">口腔</a><a href="#storage">收纳</a><a href="#emergency">应急</a>
+</nav>
+
+<section class="card" id="plan">
+<h2>🧭 购买方案｜先看这里</h2>
+<div class="route">
+<div class="stop"><b>DAY 1 · 第1站｜Watsons High Street Plaza</b><span class="muted">个人护理、口腔、染发、基础急救。买完先回家放货。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Watsons+High+Street+Plaza+26th+St+9th+Ave+BGC+Taguig" target="_blank">📍 Google Maps 导航</a></div>
+<div class="stop"><b>DAY 1 · 第2站｜SM Aura Premier</b><span class="muted">ACE Hardware → SM Appliance → Xiaomi。集中购买工具、晾晒、浴室用品、吹风机、热水壶、电磁炉。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=SM+Aura+Premier+Taguig" target="_blank">📍 导航到 SM Aura</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier" target="_blank">ACE</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura" target="_blank">SM Appliance</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura" target="_blank">Xiaomi</a></div>
+<div class="stop"><b>DAY 1 · 第3站｜回 Two Maridien 卸货</b><span class="muted">拖把、晾衣架、小家电体积较大，建议先送回家。</span><br><a class="btn green" href="https://www.google.com/maps/dir/?api=1&destination=Two+Maridien+Tower+26th+St+Taguig+Metro+Manila" target="_blank">🏠 导航回家</a></div>
+<div class="stop"><b>DAY 2 · 第1站｜DREAME BGC · Mitsukoshi</b><span class="muted">购买 Dreame S10。若当天太累，可单独安排。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=DREAME+BGC+Mitsukoshi+BGC" target="_blank">📍 Google Maps 导航</a></div>
+<div class="stop"><b>DAY 2 · 第2站｜Landers BGC</b><span class="muted">最大宗采购：清洁 → 洗衣 → 床品 → 厨房 → 日用品 → 最后食品。买完建议 Grab 直接回家。</span><br><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Landers+Superstore+BGC+Taguig" target="_blank">📍 Google Maps 导航</a></div>
+</div>
+<div class="note" style="margin-top:12px">Landers 需要会员资格。官方帮助中心列出的个人会员年费为 ₱700；如尚未办理，请把会员费用计入预算。门店营业时间、库存和价格可能变化，出发前建议再次确认。</div>
+</section>
+
+<section class="card">
+<h2>📊 采购进度</h2><div><span id="done">0</span> / <span id="count">0</span> 项已完成</div><div class="progress"><div class="bar" id="bar"></div></div>
+<button class="btn secondary" onclick="resetChecks()">重置全部勾选</button>
+</section>
+
+<div id="lists"></div>
+
+<section class="card">
+<h2>💰 总预算</h2>
+<table><tr><th>模块</th><th>预算</th></tr>
+<tr><td>清洁＋洗衣</td><td>₱4,000–6,500</td></tr><tr><td>床品＋晾晒＋收纳</td><td>₱5,000–8,000</td></tr>
+<tr><td>厨房锅具＋餐具</td><td>₱4,000–6,000</td></tr><tr><td>个人护理＋口腔＋染发</td><td>₱8,000–14,000</td></tr>
+<tr><td>ACE工具/浴室</td><td>₱3,500–6,000</td></tr><tr><td>Dreame S10</td><td>₱4,100–4,500</td></tr>
+<tr><td>Deerma DX700</td><td>₱1,700–2,700</td></tr><tr><td>Xiaomi电磁炉</td><td>约₱2,000</td></tr>
+<tr><td>吹风机＋热水壶</td><td>₱1,700–4,000</td></tr><tr><td>应急/电源</td><td>₱1,500–3,000</td></tr>
+<tr><td>首批食品</td><td>₱1,500–3,000</td></tr></table>
+<p class="total">建议准备：₱37,000–59,000</p>
+<p class="muted">TP-Link AX23、牛排专用锅、微波炉、电饭煲作为第二阶段，不计入当前必需采购。</p>
+</section>
+
+<section class="card">
+<h2>⚠️ 关键安全提醒</h2>
+<p>含氯消毒剂不要与酸性除垢剂、洁厕剂、醋、氨或下水道清洁剂混用。不同化学品分开使用，并充分冲洗、通风。</p>
+<p><b>2100W 电磁炉直接连接可靠接地的墙壁插座</b>，不要使用普通插线板或普通延长线。</p>
+<p>新床垫/旧床垫处理优先采用吸尘、干燥、全包床垫套；不要把含氯消毒剂或杀虫剂喷在睡眠接触面。</p>
+</section>
+<footer>Two Maridien 入住采购清单 · 静态网页 · 可直接部署 GitHub Pages</footer>
+</div>
+
+<script>
+const groups = [
+["clean","🧹 1. 全屋清洁",[
+["Mr Muscle 5-in-1 Total Kitchen","1","₱180–250","Landers","必买"],["CIF Cream Cleaner 500ml","1","₱200–300","Landers","建议"],["Palmolive Oxy Power Degreaser","1","₱180–220","Landers","必买"],["Domex Stain & Limescale Cleaner","1","₱150–220","Landers","必买"],["Mr Muscle Mold & Mildew","1","₱180–220","Landers","必买"],["Mr Muscle Sink & Drain Declogger","1","₱150–200","Landers","必买"],["Dr. Beckmann Service-it Deep Clean","2","₱500–600","Landers","必买"],["Mr Muscle Glass Cleaner","1","₱150–250","Landers","建议"],["Charcoal Dehumidifier","4–6","₱400–600","Landers","必买"],["Microfiber Cloth","8–10","₱200–400","Landers","必买"],["3M Non-Scratch Sponge","1包","₱100–200","Landers/ACE","必买"],["Nitrile/Rubber Gloves","1盒","₱200–400","Landers","必买"],["KN95","1包","₱100–300","Landers","建议"],["Heavy Duty Garbage Bags","2卷","₱200–400","Landers","必买"],["Kitchen Paper Towels","1大包","₱250–500","Landers","必买"]]],
+["laundry","👕 2. 洗衣系统",[
+["Ariel Power Gel / Liquid + Downy","1大瓶","₱500–750","Landers","必买"],["Vanish Oxi Action Pink","1","₱250–500","Landers","必买"],["Downy Premium Parfum Mystique","1","₱250–500","Landers","建议"],["Woolite Delicates / Gentle Cycle","1","₱500–700","Landers/网购","必买"],["3% Hydrogen Peroxide","1","₱50–150","Watsons","建议"],["Lysol Laundry Sanitizer","1","₱800–1,400","Landers/网购","建议"]]],
+["tools","🧽 3. 地面与浴室工具",[
+["ACE Microfiber Flat Mop + Bucket","1","约₱700","ACE SM Aura","必买"],["Replacement Pads","2","约₱200","ACE SM Aura","必买"],["长柄浴室刷","1","₱150–350","ACE SM Aura","必买"],["Grout Brush","2","₱100–250","ACE SM Aura","建议"],["Squeegee","1","₱100–250","ACE SM Aura","建议"],["Drain Strainer","2–3","₱100–250","ACE SM Aura","必买"],["Digital Hygrometer","2","₱400–1,000","ACE SM Aura","建议"],["防滑浴室垫","1","₱200–500","ACE SM Aura","必买"],["马桶刷＋底座","1","₱200–400","ACE SM Aura","必买"],["卫生间带盖垃圾桶","1","₱200–500","ACE SM Aura","必买"]]],
+["bed","🛏️ 4. 吸尘与床品",[
+["Dreame S10 Mite Removal Vacuum","1","₱4,100–4,500","DREAME BGC","必买"],["Deerma DX700/DX700S","1","₱1,700–2,700","家电/网购","必买"],["Full-Zip Mattress Encasement","1","₱700–1,500","Landers/网购","必买"],["新枕头","2","₱1,000–2,000","Landers","必买"],["床单＋枕套","2套","₱1,600–3,000","Landers","必买"],["薄被/空调被","1","₱1,000–2,000","Landers","必买"],["被套","2","₱1,000–2,000","Landers","建议"]]],
+["kitchen","🍳 5. 厨房与餐饮",[
+["Xiaomi Induction Cooker Lite BHR8172PH","1","约₱2,000","Xiaomi SM Aura","必买"],["26cm深型不粘锅＋盖","1","₱800–1,500","Landers/SM","必买"],["24cm不锈钢汤锅＋盖","1","₱700–1,500","Landers/SM","必买"],["硅胶锅铲","1","₱100–250","Landers","必买"],["食品夹","1","₱100–250","Landers","建议"],["汤勺＋漏勺","各1","₱200–500","Landers","建议"],["隔热手套＋隔热垫","1套","₱250–600","Landers","必买"],["砧板","2","₱300–700","Landers","必买"],["7–8英寸主厨刀","1","₱500–1,200","Landers","必买"],["厨房剪刀＋开瓶/开罐器","各1","₱250–700","Landers","建议"],["饭碗","2","₱200–400","Landers","必买"],["餐盘","2","₱200–500","Landers","必买"],["杯子","2","₱200–500","Landers","必买"],["筷子＋刀叉勺","2套","₱400–900","Landers","必买"],["沥水篮/洗菜盆","1","₱200–400","Landers","建议"],["保鲜盒","4–6","₱500–1,000","Landers","建议"],["保鲜膜＋铝箔＋Zip Bags","各1","₱350–750","Landers","必买"],["厨房带盖脚踏垃圾桶","1","₱500–1,000","Landers/ACE","必买"],["1.5–1.7L 电热水壶","1","₱700–1,500","SM Appliance","必买"],["首批饮用水","1批","₱200–500","Landers","必买"]]],
+["care","🧴 6. 身体、面部、头发、剃须与染发",[
+["Aveeno Daily Moisturizing Body Wash","1","₱400–700","Watsons","必买"],["Aveeno Daily Moisturizing Lotion","1","₱500–900","Watsons","必买"],["CeraVe Hydrating Facial Cleanser","1","₱700–1,100","Watsons","必买"],["CeraVe Moisturizing Lotion","1","₱700–1,200","Watsons","必买"],["Anessa Perfect UV SPF50+","1","₱1,100–1,700","Watsons","必买"],["OGX Hydrate & Repair Shampoo","1","₱500–800","Watsons","必买"],["OGX Argan Oil Conditioner","1","₱500–850","Watsons","必买"],["OGX Argan Oil Hair Mask","1","₱600–800","Watsons","建议"],["Silicone Scalp Massager","1","₱100–250","Watsons","建议"],["负离子温控吹风机","1","₱1,000–2,500","SM Appliance","必买"],["Microfiber Hair Turban","2","₱200–500","Watsons","建议"],["浴巾","2","₱600–1,400","Landers","必买"],["Gillette Mach3 Sensitive","1","₱400–800","Watsons","必买"],["Mach3 Refill","1盒","₱500–800","Watsons","建议"],["Gillette Sensitive Shave Foam","1","₱150–250","Watsons","必买"],["L'Oréal Excellence Crème","1–2","约₱499/盒","Watsons","建议"],["染发碗刷＋分区夹＋Vaseline","1套","₱300–600","Watsons","建议"]]],
+["oral","🦷 7. 口腔护理",[
+["Philips Sonicare 3100","1","₱2,500–4,000","Watsons/Philips","必买"],["Sonicare软毛刷头","2–4","₱700–1,500","Watsons/Philips","建议"],["Sensodyne Clinical White","1–2","₱400–600","Watsons","必买"],["Colgate Optic White O2 / Pro","1","₱235–700","Watsons","必买"],["Dental Floss","1","₱75–200","Watsons","必买"],["Alcohol-Free Mouthwash","1","₱200–400","Watsons","建议"],["Tongue Scraper","1","₱100–200","Watsons","建议"]]],
+["storage","👚 8. 晾晒、收纳与日耗",[
+["Slim Non-Slip Hangers","30","₱400–700","Landers","必买"],["Wide Shoulder Hangers","4–6","₱200–500","ACE","建议"],["折叠晾衣架","1","₱800–1,500","ACE","必买"],["内衣袜子夹架","1","₱150–350","ACE","必买"],["脏衣篮","2","₱500–1,000","Landers/ACE","建议"],["带盖Storage Box","2–3","₱600–1,800","ACE","建议"],["Toilet Paper","1大包","₱300–600","Landers","必买"],["温和洗手液","2","₱200–500","Landers/Watsons","必买"],["Tissue / Wet Wipes","适量","₱200–500","Landers","建议"]]],
+["emergency","🧰 9. 工具、用电与应急",[
+["6英寸 Adjustable Wrench","1","₱250–500","ACE","必买"],["Faucet Aerator Key","1套","₱100–300","ACE","按需"],["PTFE Tape","1","₱30–80","ACE","按需"],["Faucet Adapter Kit","1","₱100–500","ACE","按需"],["基础工具箱","1","₱800–1,500","ACE","建议"],["Surge Protector","2","₱700–1,500","ACE","必买"],["LED应急灯","1","₱300–800","ACE","建议"],["Power Bank 10,000–20,000mAh","1","₱1,000–2,000","SM/Xiaomi","建议"],["备用USB-C线＋充电头","1套","₱500–1,500","SM/Xiaomi","建议"],["基础First Aid Kit","1","₱500–1,000","Watsons","必买"],["首批基础食品＋调味料","1批","₱2,300–4,500","Landers","必买"],["TP-Link Archer AX23","1","₱2,000–3,000","后补","暂缓"]]]
+];
+
+const placeLinks = {
+"Landers":"https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig",
+"Landers/ACE":"https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig",
+"Landers/网购":"https://www.google.com/maps/search/?api=1&query=Landers+Superstore+BGC+Taguig",
+"Watsons":"https://www.google.com/maps/search/?api=1&query=Watsons+High+Street+Plaza+BGC",
+"ACE":"https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier",
+"ACE SM Aura":"https://www.google.com/maps/search/?api=1&query=ACE+Hardware+SM+Aura+Premier",
+"DREAME BGC":"https://www.google.com/maps/search/?api=1&query=DREAME+BGC+Mitsukoshi",
+"SM Appliance":"https://www.google.com/maps/search/?api=1&query=SM+Appliance+Center+Aura",
+"Xiaomi SM Aura":"https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura",
+"SM/Xiaomi":"https://www.google.com/maps/search/?api=1&query=Xiaomi+Mi+Store+SM+Aura"
+};
+let idx=0, out="";
+groups.forEach(g=>{
+ out+=`<section class="card" id="${g[0]}"><h2>${g[1]}</h2><div class="scroll"><table><thead><tr><th class="check">✓</th><th>产品</th><th>数量</th><th>预算</th><th>购买地点</th><th>优先级</th></tr></thead><tbody>`;
+ g[2].forEach(r=>{
+  const id="i"+idx++;
+  const link=placeLinks[r[3]];
+  const place=link?`<a href="${link}" target="_blank">${r[3]} 📍</a>`:r[3];
+  const pc=r[4]=="必买"?"must":r[4]=="建议"?"rec":"later";
+  out+=`<tr><td><input type="checkbox" id="${id}" data-id="${id}"></td><td>${r[0]}</td><td>${r[1]}</td><td class="price">${r[2]}</td><td>${place}</td><td class="priority ${pc}">${r[4]}</td></tr>`;
+ });
+ out+="</tbody></table></div></section>";
+});
+document.getElementById("lists").innerHTML=out;
+function update(){
+ const c=[...document.querySelectorAll('input[type=checkbox]')], done=c.filter(x=>x.checked).length;
+ document.getElementById("done").textContent=done;document.getElementById("count").textContent=c.length;
+ document.getElementById("bar").style.width=(done/c.length*100)+"%";
+ c.forEach(x=>localStorage.setItem(x.dataset.id,x.checked?"1":"0"));
+}
+document.querySelectorAll('input[type=checkbox]').forEach(x=>{x.checked=localStorage.getItem(x.dataset.id)==="1";x.addEventListener("change",update)});
+function resetChecks(){if(confirm("确定清除全部勾选记录？")){document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);localStorage.clear();update()}}
+update();
+</script>
+</body></html>
